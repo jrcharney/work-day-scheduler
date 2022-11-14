@@ -40,13 +40,18 @@ THEN the saved events persist
 
 Deadline: 11/14/2022
 
-* [ ] Install Node.js
-* [ ] Install Day.js
-* [ ] When opening this application, show the current day at the top of the calendar.
+* [x] ~~Install Node.js~~ Probably should not have done this.
+* [x] Install Day.js
+    - LOOK FOR THE PLUGINS ON THE CDN!
+* [x] Install Bootstrap
+* [x] Install jQuery and jQueryUI
+* [x] When opening this application, show the current day at the top of the calendar.
 * [ ] When scrolling down, show timeblocks for standard business hours
 * [ ] When viewing the timeblocks for the day, each timeblock should be color coded to indicate wheter it was in the past, present, or future.
     - Google Calendar typically grays out past events
 * [ ] When clicking a timeblock, open the event.
-* [ ] When clicking the save button for the timeblock, the text for the event is saved in local storage.
+* [ ] When clicking the save button for the timeblock, the text for the event is saved in `localStorage`.
     - Timewarrior stores events in a file, probably should follow that as an example.
 * [ ] When the page is refreshed, the saved events persist.
+
+I think I should have used Vite to start this project.

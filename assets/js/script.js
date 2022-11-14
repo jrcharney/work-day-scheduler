@@ -8,10 +8,8 @@
 /*
 //window.$ = $;
 //window.jQuery = jQuery;
-
-//var calendar = require('dayjs/plugin/calendar');
 */
-//dayjs.extend(calendar);
+//let calendar = require('dayjs/plugin/calendar');
 
 /* Add the tabs for our views */
 /* Let's change it up and try using the arrow operator */
@@ -22,6 +20,11 @@ $(() => {
 /* Insert today's date! */
 let today = dayjs();
 $("#today").text(today.format('dddd, MMMM D, YYYY'));
+
+//const calendar = require('dayjs/plugin/calendar');
+//dayjs.extend(calendar);
+
+//dayjs().calendar(dayjs('2008-01-01'))
 
 /*
 dayjs().calendar(dayjs('2008-01-01'))
