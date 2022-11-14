@@ -6,28 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work Day Scheduler</title>
     <!-- NOTE: I added the defer tag to all the javascript so that it processes once the HTML loads. -->
-
-    <!-- jQuery -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- jQueryUI -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
-    <!-- TODO: Should I add a jQuery UI theme? -->
-
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/theme.min.css" integrity="sha512-hbs/7O+vqWZS49DulqH1n2lVtu63t3c3MTAn0oYMINS5aT8eIAbJGDXgLt6IxDHcWyzVTgf9XyzZ9iWyVQ7mCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap -->
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
-    <!-- Day.js -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.6/dayjs.min.js" integrity="sha512-hcV6DX35BKgiTiWYrJgPbu3FxS6CsCjKgmrsPRpUPkXWbvPiKxvSVSdhWX0yXcPctOI2FJ4WP6N1zH+17B/sAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     <!-- TODO: Find out why my styles seem to conflict with bootstrap's styles. The font is nicer, but I'm worry this might be problematic. -->
     <!-- My stylesheet stuff should be the first thing that runs, so Bootstrap doesn't conflict with it. -->
     <link rel="stylesheet" href="./assets/css/style.css">
-
+    
+    <!-- jQuery -->
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jQueryUI -->
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+    <!-- JavaScript Bundle with Popper -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- Day.js -->
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.6/dayjs.min.js" integrity="sha512-hcV6DX35BKgiTiWYrJgPbu3FxS6CsCjKgmrsPRpUPkXWbvPiKxvSVSdhWX0yXcPctOI2FJ4WP6N1zH+17B/sAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- My Java Script stuff should be the last thing that runs -->
-    <script defer src="./assets/js/script.js"></script>
+    <script type="module" src="./assets/js/script.js"></script>
 </head>
 <body>
     <div class="ribbon">
@@ -36,14 +35,36 @@
     <header id="top">
         <!-- We need an ID here so that we can jump back up to the top -->
         <img src="assets/images/my_killer_robot.jpg" alt="pfp" width="100" height="100">
-        <h1>Jason Charney</h1>
+        <h1>Week Day Scheduler</h1>
     </header>
     <main>
         <!-- Ah, now I see why we use all those .card classes. Bootstrap! -->
         <section class="card">
-            <section class="card-header"></section>
+            <section class="card-header">
+                <!-- Headers are just a conveient set of styles. There doesn't need ot be an h1, h2, before using H3 -->
+                <h3 id="today"></h3>
+            </section>
             <section class="card-body">
-                <script defer>dayjs().format()</script>
+            <button id="makeAppt" title="Add a new event">New Event</button>
+            <button id="refresh" title="Refresh the calendar">Refresh</button>
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Day</a></li>
+                    <li><a href="#tabs-2">Week</a></li>
+                    <li><a href="#tabs-3">Month</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <p>Day View, Should be easy</p>
+
+                </div>
+                <div id="tabs-2">
+                    <p>Week View slightly more challenging. Don't need it right now.</p>
+                </div>
+                <div id="tabs-3">
+                    <p>Month View might be hard. Don't need this right now either.</p>
+                </div>
+                </div>
+
             </section>
             <section class="card-footer"></section>
         </section>

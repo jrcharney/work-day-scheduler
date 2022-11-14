@@ -1,0 +1,26 @@
+{
+  "name": "work-day-scheduler",
+  "version": "1.0.0",
+  "description": "Module 5 Challege",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrcharney/work-day-scheduler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrcharney/work-day-scheduler/issues"
+  },
+  "homepage": "https://github.com/jrcharney/work-day-scheduler#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "dayjs": "^1.11.6",
+    "jquery": "^3.6.1",
+    "jquery-ui": "^1.13.2"
+  }
+}
