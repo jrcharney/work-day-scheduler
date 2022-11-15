@@ -3,7 +3,7 @@
 //import "bootstrap";
 //import "bootstrap/dist/css/bootstrap.css";
 //import dayjs from "./dayjs";
-//import * as calendar from "dayjs/plugin/calendar";
+//import calendar from "dayjs/plugin/calendar";
 
 /*
 //window.$ = $;
@@ -21,10 +21,9 @@ $(() => {
 let today = dayjs();
 $("#today").text(today.format('dddd, MMMM D, YYYY'));
 
-//const calendar = require('dayjs/plugin/calendar');
-//dayjs.extend(calendar);
-
-//dayjs().calendar(dayjs('2008-01-01'))
+// These two lines won't process
+const calendar = require('dayjs/plugin/calendar');
+dayjs.extend(calendar);
 
 /*
 dayjs().calendar(dayjs('2008-01-01'))
