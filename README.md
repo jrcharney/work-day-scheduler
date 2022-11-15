@@ -2,7 +2,7 @@
 
 Module 5 Challege
 
-<!-- TODO: Insert Screenshot and link to project here -->
+![Work Day Scheduler](assets/images/work-day-scheduler.png)
 
 ## Your Task
 
