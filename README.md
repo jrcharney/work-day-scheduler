@@ -2,7 +2,7 @@
 
 Module 5 Challege
 
-![Work Day Scheduler](assets/images/work-day-scheduler.png)
+[![Work Day Scheduler](assets/images/work-day-scheduler.png)](https://jrcharney.github.io/work-day-scheduler/)
 
 ## Your Task
 

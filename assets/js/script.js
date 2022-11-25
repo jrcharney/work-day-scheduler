@@ -6,6 +6,22 @@
 //import calendar from "dayjs/plugin/calendar";
 
 /*
+localStorage.setItem("weather","snow");
+console.log(localStorage.getItem("weather"));
+
+
+let conditions = {
+  temperature : 50,
+  humidity: 20,
+  weather: "snow"
+};
+
+localStorage.setItem("weather",JSON.stringify(conditions)); // setting
+console.log(localStorage.getItem("weather"));
+console.log(JSON.parse(localStorage.getItem("weather")).humidity); // getting
+*/
+
+/*
 //window.$ = $;
 //window.jQuery = jQuery;
 */
@@ -21,12 +37,16 @@ $(() => {
 let today = dayjs();
 $("#today").text(today.format('dddd, MMMM D, YYYY'));
 
+
 // These two lines won't process
-const calendar = require('dayjs/plugin/calendar');
-dayjs.extend(calendar);
+//const calendar = require('dayjs/plugin/calendar');
+//dayjs.extend(calendar);
+
+dayjs.extend(window.dayjs_plugin_calendar);   // This does work!
+/*dayjs().calendar(dayjs('2022-11-14'));*/    // This works
+
 
 /*
-dayjs().calendar(dayjs('2008-01-01'))
 dayjs().calendar(null, {
   sameDay: '[Today at] h:mm A', // The same day ( Today at 2:30 AM )
   nextDay: '[Tomorrow at] h:mm A', // The next day ( Tomorrow at 2:30 AM )
